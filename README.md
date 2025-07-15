@@ -1,6 +1,6 @@
-# 🧠 Pokédex Vite — Projeto com React, Tailwind e TTS
+# 🧠 viteDex — Projeto com React, Tailwind e TTS
 
-Bem-vindo à **Pokédex Vite**, um projeto feito em React + Vite com foco em performance, visual caprichado com TailwindCSS e suporte a **leitura em voz alta (Text-to-Speech)** para descrever os Pokémon — tudo integrado com a [PokéAPI](https://pokeapi.co).
+Bem-vindo à **viteDex**, um projeto feito em React + Vite com foco em performance, visual caprichado com TailwindCSS e suporte a **leitura em voz alta (Text-to-Speech)** para descrever os Pokémon — tudo integrado com a [PokéAPI](https://pokeapi.co).
 
 ---
 

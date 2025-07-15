@@ -163,7 +163,7 @@ export function List() {
               role="button"
               tabIndex={0}
             >
-              <img className=" w-[29%]" src={img} />
+              {/* <img className=" w-[29%]" src={img} /> */}
               {item.name}
             </li>
           ))}
