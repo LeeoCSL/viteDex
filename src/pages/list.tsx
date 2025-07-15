@@ -1,11 +1,9 @@
 /** biome-ignore-all lint/a11y/useAltText: <explanation> */
 /** biome-ignore-all lint/performance/noImgElement: <explanation> */
 import { useEffect, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 
-import img from '../assets/new-dex.png'
 import openDex from '../assets/open-dex.png'
-// import { ListItem } from '../components/listItem'
+
 import { useList } from '../http/use-list'
 export function List() {
   type Item = {
