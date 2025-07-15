@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter basename="/viteDex">
         <Header />
         <Routes>
-          <Route element={<Home />} path="/viteDex" />
+          <Route element={<Home />} path="/" />
           <Route element={<Details />} path="/details" />
           <Route element={<List />} path="/pokedex" />
         </Routes>
