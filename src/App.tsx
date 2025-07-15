@@ -1,25 +1,25 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import {Header} from "./components/header";
-import {Home} from './pages/home'
-import {Details} from './pages/details'
-import {List} from './pages/list'
+import { Header } from './components/header'
+import { Details } from './pages/details'
+import { Home } from './pages/home'
+import { List } from './pages/list'
+
 const queryClient = new QueryClient()
 
 function App() {
   return (
-   <QueryClientProvider client={queryClient}>
-    <BrowserRouter>
-        <Header/>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/details' element={<Details />} />
-        <Route path='/pokedex' element={<List />} />
-      </Routes>
-    </BrowserRouter>
-
-   </QueryClientProvider>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter basename="/viteDex">
+        <Header />
+        <Routes>
+          <Route element={<Home />} path="/viteDex" />
+          <Route element={<Details />} path="/details" />
+          <Route element={<List />} path="/pokedex" />
+        </Routes>
+      </BrowserRouter>
+    </QueryClientProvider>
   )
 }
 
