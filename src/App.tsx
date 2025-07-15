@@ -2,7 +2,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Header } from './components/header'
-import { Details } from './pages/details'
+// import { Details } from './pages/details'
 import { Home } from './pages/home'
 import { List } from './pages/list'
 
@@ -15,7 +15,7 @@ function App() {
         <Header />
         <Routes>
           <Route element={<Home />} path="/" />
-          <Route element={<Details />} path="/details" />
+          {/* <Route element={<Details />} path="/details" /> */}
           <Route element={<List />} path="/pokedex" />
         </Routes>
       </BrowserRouter>
