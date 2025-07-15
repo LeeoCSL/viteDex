@@ -6,7 +6,7 @@ export function useList() {
     queryKey: ['get-list'],
     queryFn: async () => {
       const response = await fetch(
-        'https://pokeapi.co/api/v2/pokemon?limit=10&offset=0'
+        'https://pokeapi.co/api/v2/pokemon?limit=10000&offset=0'
       )
       const result: GetListResponse = await response.json()
       return result
