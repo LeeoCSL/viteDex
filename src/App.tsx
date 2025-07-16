@@ -5,6 +5,7 @@ import { Header } from './components/header'
 // import { Details } from './pages/details'
 import { Home } from './pages/home'
 import { List } from './pages/list'
+import { NewList } from './pages/newList'
 
 const queryClient = new QueryClient()
 
@@ -16,7 +17,7 @@ function App() {
         <Routes>
           <Route element={<Home />} path="/" />
           {/* <Route element={<Details />} path="/details" /> */}
-          <Route element={<List />} path="/pokedex" />
+          <Route element={<NewList />} path="/pokedex" />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>
